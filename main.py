@@ -7,7 +7,7 @@ PREFIX = '.'
 
 class Bot(discord.Client):
     async def on_ready(self):
-        await self.change_presence(status=discord.Status.online)
+        # await self.change_presence(status=discord.Status.online)
         print(f'Logged in as {self.user}!')
 
     async def on_message(self, message):
