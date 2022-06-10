@@ -1,6 +1,5 @@
 import discord
 import os
-from dotenv import load_dotenv
 
 class Bot(discord.Client):
     async def on_ready(self):
@@ -13,5 +12,5 @@ class Bot(discord.Client):
             await message.channel.send('pong')
 
 if __name__ == '__main__':
-    a = Bot()
-    a.run(os.environ['TOKEN'])
+    client = Bot()
+    client.run(os.environ['TOKEN'])
