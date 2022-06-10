@@ -1,6 +1,8 @@
 import discord
 import os
 
+TOKEN = os.environ['TOKEN']
+
 PREFIX = '.'
 
 class Bot(discord.Client):
@@ -15,4 +17,4 @@ class Bot(discord.Client):
 
 if __name__ == '__main__':
     client = Bot()
-    client.run(os.environ['TOKEN'])
+    client.run(TOKEN)
